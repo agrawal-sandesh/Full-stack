@@ -1,0 +1,21 @@
+.card{
+    margin: -10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px grey solid;
+    text-align: center;
+    border-radius: 10px;
+    background-image: radial-gradient(grey,black);
+    position: relative;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .card:hover{
+    border: 2px rgb(223, 138, 138) solid;
+    box-shadow: 0px 5px 15px 10px rgb(211, 114, 114);
+    transform: scale(1.5);
+    transition: ease 1.5s;
+    z-index: 50;
+  }

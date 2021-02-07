@@ -1,0 +1,31 @@
+html{
+    background-image: linear-gradient(to right,orange,whitesmoke,lightgreen);
+    font-size: 12px;
+}
+div{ 
+    padding: 10px; 
+    font-size: 20px; 
+    margin: 10px; 
+} 
+
+.box1{ 
+    height: 60%; 
+    width: 70%;
+    border: 1px solid brown;
+    font-size: 1rem;
+} 
+
+.box2{ 
+    border:1px solid green;
+    font-size: 1.5em;
+} 
+
+.box3{ 
+    border: 1px solid blue;
+    font-size: 1.5rem;
+} 
+
+.box4{ 
+    border: 1px solid red; 
+    font-size: 2em;
+} 

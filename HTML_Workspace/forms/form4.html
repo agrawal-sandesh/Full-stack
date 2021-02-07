@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dine Booking page</title>
+        <meta name="keywords" content="form,html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body><center><p>Dine Booking</p></center>
+        <center>
+            <form name="Booking Form" action=".\submissionfile.html" method="GET">
+                Visitor Name: <input type="text" required autofocus pattern="^[A-Za-z ]+$" maxlength="20"><br>
+                Number of Members: <input type="number" min="0" max="99" maxlength="2" required><br>
+                Contact No: <input type="text" pattern="[0-9]{10}" maxlength="10" minlength="10" required><br>
+                Email: <input type="email" required><br>
+                <label for="Typesoffood">Types of Food: </label>
+                <input type="checkbox" name="Typesoffood"required>South Indian
+                <input type="checkbox" name="Typesoffood"> North Indian
+                <input type="checkbox" name="Typesoffood"> Chinese
+                <input type="checkbox" name="Typesoffood"> Western <br>
+                <label for=radiobutton>Room Status: </label>
+                <input type="radio" name="radiobutton" required value="AC">AC
+                <input type="radio" name="radiobutton" value="Non-AC">Non-AC<br>
+                <label for="dropdown_list">Venue Preference:</label>
+                <Select name="dropdown_list" required>
+                    <option value="default">SELECT</option>
+                    <option value="Arena">Arena</option>
+                    <option value="Fiesta">Fiesta</option>
+                    <option value="Maitri">Maitri</option>
+                    <option value="Oasis">Oasis</option>
+                    <option value="Amoeba" disabled="Amoeba">Amoeba</option>
+                </Select><br>
+                <input type="submit" value="Book">
+                <input type="reset">
+            </form>
+        </center>
+    </body>
+</html>

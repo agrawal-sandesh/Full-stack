@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DLregForm</title>
+    </head>
+    <body>
+        <p>
+            Application for Drivers licence
+        </p>
+        <br>
+        <form method="GET">
+            Date Of Birth: <input type="date" required> <br><br>
+            <div>
+                <label for=gender>Gender: </label>
+                <input type="radio" name="gender" required   value="Male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio"  name="gender" value="others"> Others
+            </div><br>
+            PAN: <input type="text" required pattern="[A-Za-z0-9]{10}" maxlength="10"><br><br>
+            LL No: <input type="text" required pattern="[A-Za-z0-9- ]{12}" maxlength="12"><br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

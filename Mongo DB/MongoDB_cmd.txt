@@ -1,0 +1,174 @@
+Steps to install and start Mongodb:
+
+1. Install .msi file from official website
+2. set environment variable i.e path of the exe file of Mongodb package in system
+3. open cmd with admin autority create "data" directory in C: drive and than create "db" inside "data" directory
+4. run cmd "mongod" in admin cmd to initiate mongo server
+5. Now open other cmd without admin rights and run cmd "mongo" on client side
+6. connection gets stablished
+------------------------------------------------------------------------------------------------------------------
+
+Mongodb Commonly used Commands:
+
+db level commands:
+
+	use "dbname",
+	show dbs,
+ 	db,
+-----------------------------------------------------------------------------
+
+Collection level commands:
+
+	db.createCollection("Collection Name")    //Create Collection
+	db."CollectionName".insertMany()          //insert documents in collection
+	db.getCollectionNames()                   //Get names of present collection in dbs
+	db."CollectionName".drop()                //Drop the collections  
+
+-----------------------------------------------------------------------------
+
+Read Commands:
+
+	db."collectionName".find().pretty()
+	db.collection_name.find( {query}, {projection} )      //projection means what u want to show only specific data
+    db.collection_name.find(
+       { $and: [
+       { attribute1 : "value1" },
+       { attribute2 : "value2" }
+     ]})
+    
+    db.product_catalog.find(
+		{ "categories.main":{$ne:"electronics"} },
+		{ _id: 0, prodname: 1 }
+	)
+-----------------------------------------------------------------------------
+
+Update Commands:
+
+    db.product_catalog.updateMany(
+      { "price" : { $gt : 80000 }, "manufacturer" : "apple" },
+      { $set: { "prodname" : "iphone 7 plus" } },
+      { upsert: true }                                            //Creating a new document in existing Collection
+    )
+
+    db.product_catalog.update( 
+	    {  prodname : "nosql distilled"  }, 
+	    {  "prodname" : "NoSQL Distilled - Second Edition"  }   
+    )
+
+    db.product_catalog.update({prodid:7000012},{$inc:{price:18}})
+
+    db.product_catalog.update(
+	    { prodid: 7000001},
+	    { $push: { colors: "white" } } )
+
+    db.product_catalog.update(
+        {prodid:7000001},
+        {$push:{colors:{$each:['midnight blue','red']}
+        }
+        })
+    
+    db.product_catalog.update({UserId:"jimmy999"},{$unset:{'field':'value'}})
+
+    db.product_catalog.update({UserId:"jimmy999"},{$rename:{'field':'value'}})
+
+----------------------------------------------------------------------------------
+
+Delete Commands:
+     
+    db.collection_name.deleteOne( { <<remove criteria>> } )
+
+    db.product_catalog.deleteMany(
+      { price: { $lt : 1000 } } )
+
+    db.collection_name.deleteMany( {} ) //deleting all documents from collection
+
+------------------------------------------------------------------------------------
+
+Aggregation Commands:
+
+Single purpose Aggregation Methods:
+
+    db.product_catalog.count( { "categories.sub": "smartphones" })  //return counted sum of all the values
+
+    db.product_catalog.distinct( "manufacturer" )                //returns single values of the mentioned field in array
+
+
+Multi purpose Aggregation piplining Methods:
+
+      db.product_catalog.aggregate( [
+        { $project: { _id: 0, manufacturer: 1, price: 1 } },
+        { $group: { _id: "$manufacturer", totalPrice: { $sum: "$price" },totalProducts:{$sum:1} } }
+      ] )
+
+    db.product_catalog.aggregate(
+	    { $match: { manufacturer:"lenovo"} } )
+
+
+    db.product_catalog.aggregate(
+	    { $match: {$and: [{ manufacturer: "lenovo" }, {price : {$lt:10000} } ] }
+       } )
+    
+    db.product_catalog.aggregate( [
+	    { $sort : { price: 1 } },
+	    { $limit: 5},
+	    { $out: "FiveCheapestMobiles"}          // Returns the output in a new collection-"FiveCheapestMobiles" 
+      ] )
+
+----------------------------------------------------------------------------------------------------------------
+
+Indexing Commands:
+
+     For ascending indexes:
+     db.collection_name.createIndex( { field_name : 1 } )
+     
+     For descending indexes:
+     db.collection_name.createIndex( { field_name : -1 } )
+
+    Compound Index:
+
+      db.product_catalog.createIndex({ price:1, rating:-1 })
+
+    
+Text Index:
+
+    Query to check the  performance:
+    db.product_catalog.find({field:"value"}).explain("executionStats")
+
+    db.product_catalog.createIndex({field_name:"text"})                     // to create text index of any field i.e : name,uname,location
+
+    db.product_catalog.createIndex({ price:-1 },{ name:"price_index_desc" })              //create index with a name
+
+
+    The $text operator is used to perform text search on the indexed field to retrieve the details of 'smartphones'.
+
+      db.product_catalog.find({ $text:{ $search:"smartphones"}})
+
+      db.product_catalog.getIndexes()                           //to retrieve all the indexes in a collection
+
+
+    To drop Index:
+    
+     If you know the name of the index:
+     db.collection_name.dropIndex( "index_name" )
+
+     For ascending indexes: 
+     db.collection_name.drop_Index( { field_name : 1 } )
+
+     For descending indexes: 
+     db.collection_name.drop_Index( { field_name : -1 } )  
+
+    db.product_catalog.dropIndexes()
+
+------------------------------------------------------------------------------------------------------------------
+ 
+
+
+
+
+
+
+    
+
+
+
+

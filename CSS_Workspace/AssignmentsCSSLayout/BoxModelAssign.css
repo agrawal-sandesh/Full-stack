@@ -1,0 +1,24 @@
+.outerbox {
+    border: 20px solid yellow;
+    height: 580px;
+    width: 550px;
+}
+
+h1 {
+    color: red;
+    padding: 10px 0px 0px 28px;
+}
+
+.imgContainer {
+    margin-left: 30px;
+    margin-right: 130px;
+    margin-top: 40px;
+    border: 10px dotted orange;
+    padding: 15px 15px 15px 15px;
+}
+
+.textContainer {
+    border: 8px dashed brown;
+    margin: 30px 40px 30px 30px;
+    padding: 10px 10px 10px 10px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise8_dom.html</title>
+    <style>
+        .box {
+            border: 1px solid black;
+            height: 80%;
+            width: 50%;
+            position: fixed;
+            top: 3%;
+            left: 20%;
+        }
+        
+        h1,
+        h2 {
+            padding: 2%;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+        form {
+            margin: 20px 20px;
+        }
+        
+        form>input {
+            margin: 1% 1%;
+        }
+        
+        button {
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+        
+        label {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Infy Online Gourment Shop</h1>
+        <h2>Dine Booking</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="vname" name="name"> <br>
+            <label for="nom">Number of Members:</label>
+            <input type="text" id="number" name="nom"><br>
+            <label for="cno">Contact No:</label>
+            <input type="Number" id="contno" name="cno"><br>
+            <label for="eml">Email:</label>
+            <input type="email" id="email" name="eml"><br>
+            <label for="food">Type of Food: </label>
+            <input type="radio" value="South Indian" id="si" name="food">South Indian
+            <input type="radio" value="North Indian" id="ni" name="food">North Indian
+            <input type="radio" value="Chinese" id="ch" name="food">Chinese
+            <input type="radio" value="Western" id="ws" name="food">Western<br>
+            <label for="status">Room Status: </label>
+            <input type="checkbox" value="AC" id="ac" name="status">AC
+            <input type="checkbox" value="Non-AC" id="nac" name="status">Non-AC<br>
+            <label for="dropdown_list">Venue Preference: </label>
+            <select name="dropdown_list" id="dlist">
+                <option value="Select">--SELECT--</option>
+            </select><br>
+            <button type="submit" id="book">Book</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+        <center style="font-weight: bold;">
+            <p id="output"></p>
+            <p id="output1"></p>
+        </center>
+
+    </div>
+
+</body>
+<script>
+    let radio = document.getElementById("si").checked = true;
+    let check = document.getElementById("ac").checked = true;
+    document.getElementById("output").innerText = ("The default value of food type is: " + document.getElementById("si").value)
+    document.getElementById("output1").innerText = ("The default value of Room status is: " + document.getElementById("ac").value)
+</script>
+
+</html>

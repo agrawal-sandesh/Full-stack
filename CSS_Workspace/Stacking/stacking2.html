@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+             .box{
+  height: 100px;
+  width: 100px;
+  border: 1px dotted black;
+  position: absolute;
+}
+.div1{
+  margin-top: -20px;
+  background-color: greenyellow;
+  z-index: 5;
+}
+.div2{
+  margin-top: 60px;
+  margin-left: 25px;
+  background-color: lightseagreen;
+  z-index: 15;
+}
+.div3{
+  margin-top: 20px;
+  margin-left: 40px;
+  background-color: lightcoral;
+  z-index: 50;
+}
+.div4{
+    height: 140px;
+  width: 200px;
+  border: 1px dotted black;
+  position: absolute;
+    margin-top: 20px;
+    margin-left: 60px;
+    background-color: goldenrod;
+    z-index: 5; 
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div style="margin: 100px;"></div>
+<div class="box div1">Div 1 </div>
+<div class="box div2">Div 2 </div>
+<div class="div4">
+    <div class="box div3">Div 3 </div>
+</div>
+</div>
+</body>
+</html>

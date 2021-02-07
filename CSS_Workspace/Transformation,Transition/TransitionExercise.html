@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .card,
+        img {
+            height: 280px;
+            width: 330px;
+        }
+        
+        .card {
+            height: 350px;
+            width: 330px;
+            border: 8px solid black;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .card:hover {
+            height: 625px;
+            width: 330px;
+            box-shadow: 12px 8px 5px rgba(109, 100, 100, 0.63);
+            transition: 1s;
+            transition-delay: 0.2s;
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-img">
+            <img src="./images/oneplus.jpg" alt="ek Image hai">
+        </div>
+        <h3>OnePlus 8 Pro</h3>
+        <p>ROM:256GB</p>
+        <p>RAM:6GB</p>
+        <p>CAMERA:64MP+14MP+8MP</p>
+        <p>Version:Android10</p>
+        <p>Battery:5,600mAh</p>
+        <p>Best Price:Rs56,900</p>
+    </div>
+</body>
+
+</html>

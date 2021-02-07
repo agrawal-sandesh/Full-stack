@@ -1,0 +1,8 @@
+[
+    { "country": "Australia", "state": ["New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia"] },
+    { "country": "India", "state": ["Andhra Pradesh", "Assam", "Arunachal Pradesh", "Bihar", "Goa", "Gujarat", "Jammu and Kashmir", "Jharkhand", "West Bengal", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Orissa", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Tripura", "Uttaranchal", "Uttar Pradesh", "Haryana", "Himachal Pradesh", "Chhattisgarh"] },
+    { "country": "New-Zeland", "state": ["Auckland", "New Plymouth", "Wellington", "Nelson", "anterbury", "Otago"] },
+    { "country": "Pakistan", "state": ["Punjab", "Sindh", "Khyber Pakhtunkhwa", "Islamabad"] },
+    { "country": "USA", "state": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware"] },
+    { "country": "Agrawals", "state": ["Bansal", "Kansal", "Airan", "Mittal", "Jindal", "Garg", "Goyal"] }
+]

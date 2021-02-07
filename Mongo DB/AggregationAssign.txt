@@ -1,0 +1,23 @@
+Aggreation Assignment:
+
+  db.product_catalog.aggregate( [
+	    { $sort : { price: 1 } },
+	    { $limit: 10},
+	    { $out: "TopTenCheapestMobiles"}  
+      ] )
+ 
+ db.product_catalog.aggregate([
+     {$project:{_id:0,manufacturer:1,model:1,price:1}},
+     {$match:{$and:[{manufacturer:"mi"},{price:{$lte:15000}}]}},
+     {$out:"MiMobiles"}
+ ]     
+ )
+
+  db.product_catalog.aggregate([
+     {$project:{_id:0,manufacturer:1,model:1,price:1}},
+     {$match:{$and:[{manufacturer:"samsung"},{price:{$gt:7000}}]}},
+     {$out:"SamsungMobiles"}
+ ]     
+ )
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event</title>
+    <link href="../../BOOTSTRAP_Workspace/bootstrap.css" rel="stylesheet">
+    <style>
+        [disabled*='true'] {
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" id="enable" type="radio" name="hai" onclick="document.getElementById('but').setAttribute('disable',false)"> Enable
+            </label><br><br>
+            <label class="form-check-label">
+                <input class="form-check-input" id="disable" type="radio" name="hai" onclick="document.getElementById('but').setAttribute('disabled',true)"> Disable
+            </label><br><br>
+            <button type="button" class="btn btn-primary" id="but">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
