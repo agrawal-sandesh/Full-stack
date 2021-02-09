@@ -1,0 +1,22 @@
+Mon Feb 08 2021 - Error: Unauthorized access!!
+    at D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\src\routes\routing.js:13:19
+    at Layer.handle [as handle_request] (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\layer.js:95:5)
+    at D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:47:12)
+Mon Feb 08 2021 - Error: Unauthorized access!!
+    at D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\src\routes\routing.js:13:19
+    at Layer.handle [as handle_request] (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\layer.js:95:5)
+    at D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\infosys-mern-stack\Expressjs_Workspace\ExpressWallet_v.2.0\node_modules\express\lib\router\index.js:47:12)
