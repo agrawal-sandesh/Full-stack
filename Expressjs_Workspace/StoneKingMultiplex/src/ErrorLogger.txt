@@ -1,0 +1,20 @@
+SyntaxError: Unexpected token s in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\raw-body\index.js:224:16)
+    at done (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+SyntaxError: Unexpected token s in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\raw-body\index.js:224:16)
+    at done (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)

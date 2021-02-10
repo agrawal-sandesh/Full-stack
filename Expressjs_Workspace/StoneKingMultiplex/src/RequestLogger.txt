@@ -1,0 +1,9 @@
+Tue Feb 09 2021 GET /getAllShows
+Tue Feb 09 2021-GET:/getAllShows
+Tue Feb 09 2021 - GET : /getAllShows
+Tue Feb 09 2021 - POST : /bookMovie
+Tue Feb 09 2021 - POST : /bookMovie
+Tue Feb 09 2021 - POST : /bookMovie
+Tue Feb 09 2021 - POST : /getAllShows
+Tue Feb 09 2021 - GET : /getAllShows
+Tue Feb 09 2021 - POST : /bookMovie

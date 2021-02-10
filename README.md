@@ -1,3 +1,3 @@
-# mern-stack-by-sandesh 
-A complete package for web development from sratch
+# infosys-mern-stack 
+A complete package for web development
 by Sandesh
