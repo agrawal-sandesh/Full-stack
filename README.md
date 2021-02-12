@@ -7,5 +7,6 @@ It contains:
 3. Bootstrap
 4. JavaScript
 5. MongoDB
-6. Node and Express jS
+6. Node and Express jS.
+
 As of now, I am soon going to update Express JS
