@@ -1,8 +1,11 @@
-<<<<<<< HEAD
-# infosys-mern-stack 
-A complete package for web development
-by Sandesh
-=======
-# mern-stack-by-sandesh 
-A complete package for web development from sratch
->>>>>>> 7009ad37ee3803b962e24ad0f760290cb9464353
+# mern-stack-course
+A complete package for mern stack by Sandesh from sratch.
+This course has all the content step by step in the form of example and demo
+It contains:
+1. HTML
+2. CSS
+3. Bootstrap
+4. JavaScript
+5. MongoDB
+6. Node and Express jS
+As of now, I am soon going to update Express JS
