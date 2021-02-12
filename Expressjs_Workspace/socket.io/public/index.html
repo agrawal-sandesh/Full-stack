@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>socket.io</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    h2{
+        color:white;
+    }
+    span{
+        float:right;
+    }
+    .header{
+        width: 100%;
+        background-color:rgb(255, 136, 0);
+        padding: 2px;
+    }
+    .joinform{
+        width:100%;
+        height:30px;
+        background-color: darkslateblue;
+        color:whitesmoke;
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .outer{
+        width: 100%;
+        margin-left: 150px;
+        float: left;
+        align-content: center;
+        text-align: center;
+    }
+    .room{
+        width: 470px;
+        margin: 10px;
+        border: 2px solid white;
+        float: left;
+    }
+    .messages{
+        width: 450px;
+        margin:10px;
+        height: 300px;
+        background-color: white;
+        overflow: auto;
+    }
+    .txt-send{
+        width: 300px;
+        margin:5px;
+    }
+    .btn{
+        background-color:cornflowerblue;
+        color: cornsilk;
+        padding: 3px;
+        width: 100px;
+    }
+    #stack{
+        padding: 3px;
+        width: 150px;
+    }
+    
+</style>
+<body>
+    <div class="header">
+        <h1>CHAT APPLICATION   <span id="currentRoom"></span><span id="person">Welcome</span></h1>
+    </div>
+    <div class="joinform">
+    <form>
+        <label for="sname">Name</label>
+        <input id="sname" type="text" name="sname" value="" placeholder="Enter your name">
+        <select id="stack">
+            <option value="react" id="react">React</option>
+            <option value="angular" id="angular">Angular</option>
+        </select>
+        <input type="button" value="Join Room" id="joinRoom" class="btn">
+        <input type="button" value="Leave Room" id="leaveRoom" class="btn">
+    </form>
+</div>
+    <div class="outer">
+        <div class="room">
+            <h2>REACT</h2>
+            <div class="messages" id="rMessages"></div>
+            <form>
+                <input type="text" name="" id="rTxt" class="txt-send" value="">
+                <input type="button" value="Send" id="rBtn" class="btn">
+            </form>
+        </div>
+        <div class="room">
+            <h2>ANGULAR</h2>
+            <div class="messages" id="aMessages"></div>
+            <form>
+                <input type="text" name="" id="aTxt" class="txt-send" value="">
+                <input type="button" value="Send" id="aBtn" class="btn">
+            </form>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>  
+    <script>
+        var socket = io();        
+
+        var sname= document.getElementById("sname");
+        var stack= document.getElementById("stack");
+        var joinBtn= document.getElementById("joinRoom");
+        var leaveBtn= document.getElementById("leaveRoom");
+
+        leaveBtn.addEventListener("click",(e)=>{
+            socket.emit("leaveRoom",stack.value);
+            stack.value="";
+            document.getElementById("currentRoom").innerHTML="";
+        })
+
+        
+        joinBtn.addEventListener("click",function(event){
+            document.getElementById("person").innerHTML=sname.value+" : ";
+            document.getElementById("currentRoom").innerHTML=stack.value +"Room";
+            var name=sname.value;
+            var stackVal=stack.value;
+            
+            if(stackVal=="react"){
+                var rRoom = "reactRoom";
+                socket.emit('rRoom', rRoom,name);
+            }else if(stackVal=="angular"){
+                var aRoom = "angularRoom";
+                socket.emit("aRoom", aRoom,name);
+            }
+        });
+
+        // React
+        var rBtn = document.getElementById("rBtn");
+        var rTxt = document.getElementById("rTxt");
+        var rMessages = document.getElementById("rMessages");
+        
+        rBtn.addEventListener("click", function(){
+            socket.emit("react new message", rTxt.value,callback=(data)=>{
+                console.log(data)   //callback message
+            });
+            rTxt.value="";
+        });
+        socket.on("react news", function({user,data}){
+            rMessages.innerHTML = rMessages.innerHTML + "<br>" +user+":"+data;
+        });
+        socket.on("new react", function(data){
+            rMessages.innerHTML = rMessages.innerHTML + "<br>" + data;
+        });
+
+
+        // Angular
+        var aBtn = document.getElementById("aBtn");
+        var aTxt = document.getElementById("aTxt");
+        var aMessages = document.getElementById("aMessages");
+
+        aBtn.addEventListener("click", function(){
+            socket.emit("angular new message", aTxt.value,callback=(data)=>{
+                console.log(data);   //callback message
+            });
+            aTxt.value="";
+        });
+
+        socket.on("angular news", function({user,data}){
+            aMessages.innerHTML = aMessages.innerHTML + "<br>" +user+":"+data;
+        });
+
+        socket.on("new angular", function(data){
+            aMessages.innerHTML = aMessages.innerHTML + "<br>" + data;
+        });
+    </script>
+</body>
+</html>
