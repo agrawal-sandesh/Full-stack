@@ -9,4 +9,4 @@ It contains:
 5. MongoDB
 6. Node and Express jS.
 
-As of now, I am soon going to update Express JS
+As of now, I am soon going to update React JS
