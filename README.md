@@ -10,4 +10,3 @@ It contains:
 6. Node and Express jS.
 
 As of now, I am soon going to update React JS
->>>>>>> b193158960e2ae2d07f54a36884c02cabf40698f
