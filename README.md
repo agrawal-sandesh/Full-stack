@@ -1,6 +1,6 @@
 # mern-stack-course
-A complete package for mern stack by Sandesh from sratch.
-This course has all the content step by step in the form of example and demo
+A complete package of mern from sratch.
+This course has all the content step by step in the form of example and demo files.
 It contains:
 1. HTML
 2. CSS
