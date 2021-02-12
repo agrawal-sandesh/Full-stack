@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# infosys-mern-stack 
-A complete package for web development
-by Sandesh
-=======
 # mern-stack-course
 A complete package of mern from sratch.
 This course has all the content step by step in the form of example and demo files.
