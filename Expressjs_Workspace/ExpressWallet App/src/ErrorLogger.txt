@@ -239,3 +239,26 @@ Wed Feb 10 2021 - ReferenceError: collection is not defined
     at trim_prefix (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWalletUpdated\node_modules\express\lib\router\index.js:317:13)
     at D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWalletUpdated\node_modules\express\lib\router\index.js:284:7
     at Function.process_params (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWalletUpdated\node_modules\express\lib\router\index.js:335:12)
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+Tue Feb 16 2021 - ReferenceError: collection is not defined
+    at Object.model.insertScript (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\model\account.js:10:5)
+    at Object.service.insertScript (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:7:30)
+    at D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:9:34
+    at Layer.handle [as handle_request] (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:317:13)
+    at D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\sandesh.agrawal\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+=======
+>>>>>>> 55cd427f2e226a63544073201408cafe854b09d0
+>>>>>>> Stashed changes

@@ -149,3 +149,11 @@ Wed Feb 10 2021 GET /setupDB
 Wed Feb 10 2021 GET /setupDB
 Wed Feb 10 2021 POST /setupDB
 Wed Feb 10 2021 GET /setupDB
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+Tue Feb 16 2021 GET /setupDB
+Tue Feb 16 2021 GET /favicon.ico
+=======
+>>>>>>> 55cd427f2e226a63544073201408cafe854b09d0
+>>>>>>> Stashed changes
