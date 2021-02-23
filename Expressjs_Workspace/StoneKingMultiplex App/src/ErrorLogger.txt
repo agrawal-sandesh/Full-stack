@@ -18,3 +18,240 @@ SyntaxError: Unexpected token s in JSON at position 1
     at IncomingMessage.emit (events.js:327:22)
     at endReadableNT (internal/streams/readable.js:1327:12)
     at processTicksAndRejections (internal/process/task_queues.js:80:21)
+ValidationError: stoneKingMultiplex validation failed: showDateTime: Date should be greater than today
+    at model.Document.invalidate (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\document.js:2696:32)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\document.js:2516:17
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\schematype.js:1238:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+ObjectParameterError: Parameter "filter" to find() must be an object, got 3002
+    at model.Query.Query.find (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:1964:16)
+    at Function.find (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\model.js:2050:13)
+    at Object.model.checkShowId (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:31:37)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:31:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:281:22
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:354:14)
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:410:3)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+ObjectParameterError: Parameter "filter" to find() must be an object, got 3001
+    at model.Query.Query.find (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:1964:16)
+    at Function.find (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\model.js:2050:13)
+    at Object.model.checkShowId (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:31:37)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:31:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:281:22
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:354:14)
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:410:3)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+Error
+    at Object.model.checkShowId (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:37:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:31:20
+Error
+    at Object.model.checkShowId (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:37:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:31:20
+Error
+    at Object.model.checkShowId (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:37:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:31:20
+Error
+    at Object.model.checkShowId (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:37:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:31:20
+MongoError: Projection cannot have a mix of inclusion and exclusion.
+    at MessageStream.messageHandler (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:378:12)
+    at MessageStream.Writable.write (_stream_writable.js:314:12)
+    at Socket.ondata (_stream_readable.js:708:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at Socket.Readable.push (_stream_readable.js:214:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+CastError: Cast to Number failed for value "{ showId: 3002 }" at path "showId" for model "stoneKingMultiplex"
+    at model.Query.exec (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:4358:21)
+    at model.Query.Query.then (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:4452:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+CastError: Cast to Number failed for value "{ showId: 3002 }" at path "showId" for model "stoneKingMultiplex"
+    at model.Query.exec (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:4358:21)
+    at model.Query.Query.then (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:4452:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Error
+    at Object.model.checkShowId (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:37:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:31:20
+ObjectParameterError: Parameter "filter" to find() must be an object, got 3002
+    at model.Query.Query.find (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:1964:16)
+    at Function.find (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\model.js:2050:13)
+    at Object.model.checkShowId (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:31:37)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:31:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:284:7
+ReferenceError: availableSeats is not defined
+    at Object.model.availableSeats (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:42:79)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:45:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+ReferenceError: availableSeats is not defined
+    at Object.model.availableSeats (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:42:88)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:45:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+ReferenceError: availableSeats is not defined
+    at Object.model.availableSeats (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:42:88)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:45:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+ReferenceError: $availableSeats is not defined
+    at Object.model.availableSeats (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:42:86)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:44:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+ReferenceError: $availableSeats is not defined
+    at Object.model.availableSeats (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:42:86)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:44:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+ReferenceError: availableSeats is not defined
+    at Object.model.availableSeats (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:42:86)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:44:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\express\lib\router\index.js:275:10)
+Error
+    at Object.model.checkShowId (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:37:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:31:20
+ReferenceError: showid is not defined
+    at Object.model.bookShow (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:44:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:47:20
+ObjectParameterError: Parameter "filter" to find() must be an object, got 3007
+    at model.Query.Query.find (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:1964:16)
+    at Function.find (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\model.js:2050:13)
+    at Object.model.bookShow (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\models\dbLayer.js:44:44)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\src\routes\routing.js:47:20
+ValidationError: stoneKingMultiplex validation failed: showDateTime: Path `showDateTime` is required.
+    at model.Document.invalidate (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\document.js:2696:32)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\document.js:2516:17
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\schematype.js:1238:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+ValidationError: stoneKingMultiplex validation failed: showDateTime: Date should be greater than today
+    at model.Document.invalidate (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\document.js:2696:32)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\document.js:2516:17
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\schematype.js:1238:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+CastError: Cast to Number failed for value "NaN" at path "availableSeats"
+    at model.Query.exec (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:4358:21)
+    at model.Query.Query.then (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\mongoose\lib\query.js:4452:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+SyntaxError: Unexpected token s in JSON at position 14
+    at JSON.parse (<anonymous>)
+    at parse (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\raw-body\index.js:224:16)
+    at done (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\StoneKingMultiplex App\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:315:20)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)

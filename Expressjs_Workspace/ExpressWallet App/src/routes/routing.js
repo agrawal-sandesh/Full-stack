@@ -76,8 +76,8 @@ routing.delete("/transactions/:username/:tid", async(req, res, next) => {
     let username = req.params.username
     let tid = Number(req.params.tid)
     try {
-        let tid = await service.deleteTransaction(username, tid);
-        res.json({ message: "Removed transaction with Id : " + tid })
+        tid1 = await service.deleteTransaction(username, tid);
+        res.json({ message: "Removed transaction with Id : " + tid1 })
     } catch (err) { next(err) }
 })
 

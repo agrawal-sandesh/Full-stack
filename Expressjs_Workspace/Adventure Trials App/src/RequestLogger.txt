@@ -30,3 +30,33 @@
  Tue Feb 09 2021-POST:/anything
  Tue Feb 09 2021-POST:/anything
  Tue Feb 09 2021-GET:/anything
+ Mon Feb 22 2021-GET:/getPackages
+ Mon Feb 22 2021-GET:/getPackages/Vasota
+ Mon Feb 22 2021-GET:/getTrackData/Vasota
+ Mon Feb 22 2021-GET:/getPackages
+ Mon Feb 22 2021-GET:/setupDB
+ Mon Feb 22 2021-GET:/setupDB
+ Mon Feb 22 2021-GET:/setupDB
+ Mon Feb 22 2021-GET:/setupDB
+ Mon Feb 22 2021-GET:/getPackages
+ Mon Feb 22 2021-GET:/getPackages
+ Mon Feb 22 2021-GET:/getPackages
+ Mon Feb 22 2021-GET:/setupDB
+ Mon Feb 22 2021-GET:/setupDB
+ Mon Feb 22 2021-GET:/getPackages
+ Mon Feb 22 2021-GET:/getPackages
+ Mon Feb 22 2021-GET:/getPackages
+ Mon Feb 22 2021-POST:/customerDetails
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-POST:/customerDetail
+ Mon Feb 22 2021-GET:/getPackages

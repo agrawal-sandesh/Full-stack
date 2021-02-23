@@ -157,3 +157,27 @@ Tue Feb 16 2021 GET /favicon.ico
 =======
 >>>>>>> 55cd427f2e226a63544073201408cafe854b09d0
 >>>>>>> Stashed changes
+Mon Feb 22 2021 GET /setupDB
+Mon Feb 22 2021 GET /favicon.ico
+Mon Feb 22 2021 GET /setupDB
+Mon Feb 22 2021 GET /transactions/alex
+Mon Feb 22 2021 GET /transactions/alex@gmail.com
+Mon Feb 22 2021 GET /transactions/johndoe@gmail.com
+Mon Feb 22 2021 GET /transactions/mercy@gmail.com
+Mon Feb 22 2021 DELETE /transactions/alex@gmail.com/1001
+Mon Feb 22 2021 DELETE /transactions/alex@gmail.com/1001
+Mon Feb 22 2021 DELETE /transactions/alex@gmail.com/1001
+Mon Feb 22 2021 DELETE /get
+Mon Feb 22 2021 DELETE /transactions/alex@gmail.com
+Mon Feb 22 2021 GET /transactions/alex@gmail.com
+Mon Feb 22 2021 PUT /transactions/alex@gmail.com
+Mon Feb 22 2021 GET /transactions/alex@gmail.com
+Mon Feb 22 2021 POST /login
+Mon Feb 22 2021 POST /login
+Mon Feb 22 2021 POST /login
+Mon Feb 22 2021 POST /login
+Mon Feb 22 2021 POST /accounts
+Mon Feb 22 2021 POST /accounts
+Mon Feb 22 2021 POST /accounts
+Mon Feb 22 2021 GET /setupDB
+Mon Feb 22 2021 GET /transactions/alex@gmail.com

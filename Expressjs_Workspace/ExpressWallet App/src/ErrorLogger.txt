@@ -262,3 +262,125 @@ Tue Feb 16 2021 - ReferenceError: collection is not defined
 =======
 >>>>>>> 55cd427f2e226a63544073201408cafe854b09d0
 >>>>>>> Stashed changes
+Mon Feb 22 2021 - Error: No transaction details found
+    at Object.service.getTransactions (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:31:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:38:34
+Mon Feb 22 2021 - Error: No transaction details found
+    at Object.service.getTransactions (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:31:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:38:34
+Mon Feb 22 2021 - ReferenceError: Cannot access 'tid' before initialization
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:79:61
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:281:22
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:354:14)
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:410:3)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:284:7
+Mon Feb 22 2021 - ReferenceError: Cannot access 'tid' before initialization
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:79:61
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:281:22
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:354:14)
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:410:3)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:284:7
+Mon Feb 22 2021 - Error: Incorrect password
+    at Object.service.validateLogin (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:18:19)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:22:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+Mon Feb 22 2021 - Error: Incorrect password
+    at Object.service.validateLogin (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:18:19)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:22:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+Mon Feb 22 2021 - Error: Incorrect password
+    at Object.service.validateLogin (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:18:19)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:22:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+Mon Feb 22 2021 - Error: Incorrect password
+    at Object.service.validateLogin (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:18:19)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:22:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\node_modules\express\lib\router\index.js:275:10)
+Mon Feb 22 2021 - Error: User already exists
+    at Object.service.createAccount (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:41:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:53:27
+Mon Feb 22 2021 - Error: User already exists
+    at Object.service.createAccount (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:41:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:53:27
+Mon Feb 22 2021 - Error: User already exists
+    at Object.service.createAccount (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\service\account.js:41:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\ExpressWallet App\src\routes\routing.js:53:27

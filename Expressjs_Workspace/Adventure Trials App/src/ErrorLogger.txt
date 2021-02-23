@@ -1,0 +1,94 @@
+Error: No package found
+    at Object.service.getPackages (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\service\services.js:16:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\routes\router.js:18:30
+ValidationError: AdventureTrails validation failed: seatsRequired: Path `seatsRequired` is required., date: Path `date` is required., customerName: Path `customerName` is required.
+    at model.Document.invalidate (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongoose\lib\document.js:2691:32)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongoose\lib\document.js:2512:17
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongoose\lib\schematype.js:1241:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+BulkWriteError: E11000 duplicate key error collection: AdventureTrialsDB.AdventureTrails index: customerName_1 dup key: { : null }
+    at OrderedBulkOperation.handleWriteError (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\bulk\common.js:1258:9)
+    at resultHandler (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\bulk\common.js:521:23)
+    at handler (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\core\sdam\topology.js:943:24)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:378:12)
+    at MessageStream.Writable.write (_stream_writable.js:314:12)
+    at Socket.ondata (_stream_readable.js:708:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at Socket.Readable.push (_stream_readable.js:214:10)
+BulkWriteError: E11000 duplicate key error collection: AdventureTrialsDB.AdventureTrails index: customerName_1 dup key: { : null }
+    at OrderedBulkOperation.handleWriteError (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\bulk\common.js:1258:9)
+    at resultHandler (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\bulk\common.js:521:23)
+    at handler (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\core\sdam\topology.js:943:24)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:378:12)
+    at MessageStream.Writable.write (_stream_writable.js:314:12)
+    at Socket.ondata (_stream_readable.js:708:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at Socket.Readable.push (_stream_readable.js:214:10)
+TypeError: collection.findMany is not a function
+    at Object.model.getPackages (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\models\dbLayer.js:22:33)
+    at Object.service.getPackages (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\service\services.js:12:30)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\routes\router.js:18:44
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:335:12)
+TypeError: service.takeDetail is not a function
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\routes\router.js:29:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:275:10)
+    at requestLogger (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\utilities\requestlogger.js:7:5)
+ReferenceError: detailObj is not defined
+    at Object.model.takeDetail (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\models\dbLayer.js:27:48)
+    at Object.service.takeDetail (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\service\services.js:23:28)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\src\routes\router.js:29:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:317:13)
+    at D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\Adventure Trials App\node_modules\express\lib\router\index.js:335:12)
