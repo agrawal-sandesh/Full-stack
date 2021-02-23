@@ -1,16 +1,21 @@
-/*
-    Import required modules
-    It should log time and error stack of all error and should send error message as response
-    It should set the error status as response status
-    else the default response status should be 500
-    export errorLogger as module
- */
 const fs = require('fs');
 
 let errorLogger = (err, req, res, next) => {
-    if(err){
-        next();
+    if (err) {
+        fs.appendFile('ErrorLogger.txt', new Date().toDateString() + " - " + err.stack + "\n", (error) => {
+            if (error) {
+                console.log("logging error failed");
+            }
+        });
+        if (err.status) {
+            res.status(err.status);
+        } else {
+            res.status(500)
+        }
+
+        res.json({ "message": err.message })
     }
+    next();
 }
 
 module.exports = errorLogger;

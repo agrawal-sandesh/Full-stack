@@ -6,7 +6,12 @@ validator.validateEmpId = (empId) => {
         If the validation fails, throw an error with message 
         "Invalid Employee Id" with status 406
     */
+    let pattern = /^[1-3]{3}[0-9]{3}$/
+    if (!pattern.test(empId)) {
+        let err = new Error("Invalid Employee Id")
+        err.status = 406
+        throw err
+    }
 }
 
-// Export validator as module
-
+module.exports = validator;
