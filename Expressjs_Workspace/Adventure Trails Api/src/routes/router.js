@@ -1,10 +1,10 @@
 const express = require('express');
 const routing = express.Router();
-const service = require("../service/services.js");
+const dbLayer = require('../models/dbLayer')
 
 routing.get("/setupDB", async(req, res, next) => {
     try {
-        let data = await service.insertScript();
+        let data = await dbLayer.insertScript();
         if (data) {
             res.status(201)
             res.json({ message: "Inserted " + data + " document in database" })
@@ -12,24 +12,25 @@ routing.get("/setupDB", async(req, res, next) => {
     } catch (err) { next(err) }
 })
 
-//Routing to get transactions details 
 routing.get('/getPackages', async(req, res, next) => {
     try {
-        let packageDetails = await service.getPackages()
-        res.status(200)
-        res.json(packageDetails)
+        let packageDetails = await dbLayer.getPackages()
+        if (packageDetails) {
+            res.status(200)
+            res.json(packageDetails)
+        }
     } catch (err) {
         next(err)
     }
 })
 
-routing.post('/customerDetail', async(req, res, next) => {
+routing.post('/customerDetails', async(req, res, next) => {
     let detailObj = req.body
     try {
-        let resp = await service.takeDetail(detailObj);
+        let resp = await dbLayer.submitDetails(detailObj);
         if (resp) {
             res.status(200)
-            res.json({ message: "Successfully inserted the data of the customer" + detailObj.customerName })
+            res.json({ "message": "Successfully inserted the data of the customer: " + resp })
         }
     } catch (err) { next(err) }
 })

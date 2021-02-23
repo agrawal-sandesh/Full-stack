@@ -60,3 +60,19 @@
  Mon Feb 22 2021-POST:/customerDetail
  Mon Feb 22 2021-POST:/customerDetail
  Mon Feb 22 2021-GET:/getPackages
+ Tue Feb 23 2021-GET:/setupDB
+ Tue Feb 23 2021-GET:/setupDB
+ Tue Feb 23 2021-GET:/setupDB
+ Tue Feb 23 2021-GET:/setupDB
+ Tue Feb 23 2021-GET:/setupDB
+ Tue Feb 23 2021-GET:/setupDB
+ Tue Feb 23 2021-GET:/getPackages
+ Tue Feb 23 2021-POST:/customerDetails
+ Tue Feb 23 2021-POST:/getPackages
+ Tue Feb 23 2021-GET:/getPackages
+ Tue Feb 23 2021-POST:/customerDetails
+ Tue Feb 23 2021-POST:/customerDetails
+ Tue Feb 23 2021-POST:/customerDetails
+ Tue Feb 23 2021-POST:/customerDetails
+ Tue Feb 23 2021-POST:/customerDetails
+ Tue Feb 23 2021-GET:/getPackages

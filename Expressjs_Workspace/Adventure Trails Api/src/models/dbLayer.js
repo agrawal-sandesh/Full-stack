@@ -6,6 +6,7 @@ let createConnection = async() => {
 }
 
 let model = {}
+
 model.insertScript = async() => {
     await collection.deleteMany();
     let response = await collection.insertMany(initialData);
@@ -23,10 +24,10 @@ model.getPackages = async() => {
     return data;
 }
 
-model.takeDetail = async(detailObj) => {
+model.submitDetails = async(detailObj) => {
     let response = await collection.insertMany(detailObj);
     if (response && response.length > 0) {
-        return response.length
+        return (response[0].customerName)
     } else {
         let err = new Error("Script insertion failed")
         err.status = 500
