@@ -31,7 +31,6 @@ routing.post("/employees", async(req, res, next) => {
     } catch (err) { next(err) }
 })
 
-
 routing.put("/employees/:empId/:skill", async(req, res, next) => {
     /*
         - Retrive the empId and skills from the url and assign them to the variables
@@ -39,6 +38,15 @@ routing.put("/employees/:empId/:skill", async(req, res, next) => {
         - Send a json response with message "Successfully added "+<<Skill>>+" to "+<<employee Id>> with a status 200
         - In case of any error, It should be passed to next handler
     */
+    let empId = req.params.empId;
+    let skill = req.params.skill;
+    try {
+        let resp = await service.updateSkills(empId, skill);
+        if (resp) {
+            res.status(200)
+            res.json({ message: "Successfully added " + skill + " to " + empId });
+        }
+    } catch (err) { next(err) }
 })
 
 routing.delete("/employees/:empId", async(req, res, next) => {
@@ -47,7 +55,14 @@ routing.delete("/employees/:empId", async(req, res, next) => {
         - Send a json response with message "Successfully removed employee "+<<employee Id>> with a status 200
         - In case of any error, It should be passed to next handler
    */
-
+    let empId = req.params.empId;
+    try {
+        let resp = await service.deleteEmp(empId);
+        if (resp) {
+            res.status(200)
+            res.json({ message: "Successfully removed employee " + empId });
+        }
+    } catch (err) { next(err) }
 })
 
 module.exports = routing;

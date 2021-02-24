@@ -44,8 +44,17 @@ model.updateSkills = async(empId, skill) => {
         - On successfull update return the updated skill
         - Else return null
     */
-
+    let response = await collection.updateOne({ empNo: empId }, { $push: { technology: { $each: [skill] } } });
+    if (response) {
+        return response;
+    } else {
+        let err = new Error("Object insertion failed")
+        err.status = 500
+        throw new Error
+    }
 }
+
+
 
 model.removeEmp = async(empId) => {
     /*
@@ -54,8 +63,14 @@ model.removeEmp = async(empId) => {
         - On successfull deletion return empId
         - Else return false
     */
-
-
+    let response = await collection.deleteMany({ empNo: empId });
+    if (response) {
+        return response;
+    } else {
+        let err = new Error("Object deletion failed")
+        err.status = 500
+        throw new Error
+    }
 }
 
 createConnection();

@@ -3,13 +3,6 @@ const validator = require('../utilities/validator')
 
 let service = {}
 
-// let throwError = (message, status) => {
-//     let err = new Error(message);
-//     if (status) err.status = status;
-//     throw err;
-
-// }
-
 service.setupDB = async() => {
     let data = await dbLayer.setupDB();
     if (data) {
@@ -41,13 +34,20 @@ service.insertEmp = async(employeeObj) => {
 }
 
 
-service.updateSkills = async(empId, skills) => {
+service.updateSkills = async(empId, skill) => {
     /*
         - Invoke updateSkills method of model/user.js by passing skills as parameter
         - On successfull updation it returns the updated skill return the same
         - Else throw an error using throwError method by passing  message as "Updation of skill set failed" with the status as 400
     */
-
+    let data = await dbLayer.updateSkills(empId, skill)
+    if (data) {
+        return data
+    } else {
+        let err = new Error("Updation of skill set failed");
+        err.status = 400
+        throw err
+    }
 }
 
 service.deleteEmp = async(empId) => {
@@ -57,6 +57,16 @@ service.deleteEmp = async(empId) => {
         - On successfull deletion it returns the empId, return the same
         - Else throw an error using throwError method by passing  message as "Unable to remove "+<<empId>>+" details"
     */
+    validator.validateEmpId(empId);
+    let data = await dbLayer.removeEmp(empId)
+    if (data) {
+        return data
+    } else {
+        let err = new Error("Unable to remove " + empId + " details");
+        err.status = 400
+        throw err
+    }
+
 }
 
 module.exports = service;
