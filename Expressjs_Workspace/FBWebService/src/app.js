@@ -2,14 +2,10 @@ const express = require('express');
 const create = require("./model/dbsetup")
 const tester = require("../parserModule/parser").reportGenerator
 const app = express();
-
-
-
+const requestLogger = require("./utilities/requestlogger");
+const errorLogger = require("./utilities/errorlogger");
 // Import necessary modules and configure the middleware in proper order
 // Note :  Do not remove any code which is already given 
-
-
-
 
 
 app.get('/setupDb', async(req, res, next) => {
