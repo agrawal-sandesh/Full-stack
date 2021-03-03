@@ -30,7 +30,7 @@ fBookingService.bookFlight = async(flightBookingObj) => {
         throw err;
     }
     if (flightDetails.availableSeats < flightBookingObj.noOfTickets) {
-        let err = new Error("Flight almost full Only " + flightDetails.availableSeats + " left!!");
+        let err = new Error("Flight almost full Only " + flightDetails.availableSeats + " seat left!!");
         err.status = 406;
         throw err;
     }

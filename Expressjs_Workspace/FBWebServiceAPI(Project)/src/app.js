@@ -15,6 +15,25 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.get('/setupDb', async(req, res, next) => {
+    try {
+        let data = await create.setupDb();
+        res.send(data)
+    } catch (err) {
+        res.send("Error occurred during insertion of data")
+    }
+})
+
+app.get('/test', async(req, res, next) => {
+    try {
+        let data = await tester();
+        console.log("--- Verification Completed ---")
+        res.send(data);
+    } catch (err) {
+        console.log(err.message);
+    }
+})
+
 app.use(requestLogger);
 app.use('/', router);
 app.use(errorLogger);

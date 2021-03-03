@@ -2,26 +2,6 @@ const express = require('express');
 const routing = express.Router();
 const service = require('../service/users');
 
-
-routing.get('/setupDb', async(req, res, next) => {
-    try {
-        let data = await create.setupDb();
-        res.send(data)
-    } catch (err) {
-        res.send("Error occurred during insertion of data")
-    }
-})
-
-routing.get('/test', async(req, res, next) => {
-    try {
-        let data = await tester();
-        console.log("--- Verification Completed ---")
-        res.send(data);
-    } catch (err) {
-        console.log(err.message);
-    }
-})
-
 routing.post('/bookFlight', async(req, res, next) => {
     try {
         let flightBookingObj = req.body;
