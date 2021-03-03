@@ -15,7 +15,7 @@ model.setupDB = async() => {
     } else {
         let err = new Error("Script insertion failed")
         err.status = 500
-        throw new Error
+        throw err
     }
 }
 
@@ -32,7 +32,7 @@ model.insertEmp = async(employeeObj) => {
     } else {
         let err = new Error("Object insertion failed")
         err.status = 500
-        throw new Error
+        throw err
     }
 }
 
@@ -50,7 +50,7 @@ model.updateSkills = async(empId, skill) => {
     } else {
         let err = new Error("Object insertion failed")
         err.status = 500
-        throw new Error
+        throw err
     }
 }
 
@@ -69,7 +69,7 @@ model.removeEmp = async(empId) => {
     } else {
         let err = new Error("Object deletion failed")
         err.status = 500
-        throw new Error
+        throw err
     }
 }
 
