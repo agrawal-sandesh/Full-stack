@@ -45,3 +45,4 @@ Wed Feb 24 2021 POST /employees
 Wed Feb 24 2021 POST /employees
 Wed Feb 24 2021 DELETE /employees/123666
 Wed Feb 24 2021 DELETE /employees/123456
+Wed Mar 03 2021 GET /setupDB

@@ -311,3 +311,7 @@ Wed Mar 03 2021 12:50:28 GMT+0530 (India Standard Time) POST /bookFlight
 Wed Mar 03 2021 12:51:06 GMT+0530 (India Standard Time) POST /bookFlight
 Wed Mar 03 2021 12:51:12 GMT+0530 (India Standard Time) POST /bookFlight
 Wed Mar 03 2021 12:52:17 GMT+0530 (India Standard Time) GET /bookingsByFlight/IND-102
+Wed Mar 03 2021 18:39:18 GMT+0530 (India Standard Time) GET /getAllBooking
+Wed Mar 03 2021 18:39:29 GMT+0530 (India Standard Time) GET /getAllBookings
+Wed Mar 03 2021 18:40:06 GMT+0530 (India Standard Time) GET /bookingsByFlight/G1001
+Wed Mar 03 2021 18:40:16 GMT+0530 (India Standard Time) GET /bookingsByFlight/IND-101

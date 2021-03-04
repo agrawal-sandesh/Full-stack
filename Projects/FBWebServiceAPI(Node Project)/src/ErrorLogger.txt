@@ -1331,3 +1331,20 @@ Wed Mar 03 2021 - Error: Flight almost full Only 1 seat left!!
     at Object.fBookingService.bookFlight (D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\FBWebServiceAPI\src\service\users.js:33:19)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
     at async D:\myGit\mern-stack-by-sandesh\Expressjs_Workspace\FBWebServiceAPI\src\routes\routing.js:8:20
+Wed Mar 03 2021 - Error: Error in flightId
+    at Object.Validator.validateFlightId (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\src\utilities\validator.js:6:19)
+    at Object.fBookingService.getbookingsByFlightId (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\src\service\users.js:91:15)
+    at D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\src\routes\routing.js:48:34
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\layer.js:95:5)
+    at D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\index.js:281:22
+    at param (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\index.js:354:14)
+    at param (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\index.js:410:3)
+    at next (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\myGit\mern-stack-by-sandesh\Projects\FBWebServiceAPI(Node Project)\node_modules\express\lib\router\index.js:317:13)
