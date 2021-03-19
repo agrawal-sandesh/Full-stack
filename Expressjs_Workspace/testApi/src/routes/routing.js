@@ -1,10 +1,27 @@
 const express = require('express')
 const router = express.Router();
-router.get('/', (req, res) =>  {
-  res.send('Welcome')
-  });
-router.post('/login',(req,res) => { 
-    console.log(req.body); 
-    res.send("Username is "+req.body.username +" Registered"); 
- });
+
+
+router.get('/x*', function (req, res) { 
+  res.send('Route 1');
+});
+
+router.get('/xyz', function (req, res) {
+   res.send('Route 2');
+});
+
+router.get('/xyz*', function (req, res, next) {
+
+res.send('Route 3');
+
+next();
+
+});
+
+router.get('/xyz', function (req, res) { 
+  res.send('Route 4');
+});
+
+
+
 module.exports = router

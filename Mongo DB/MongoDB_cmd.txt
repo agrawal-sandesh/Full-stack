@@ -62,6 +62,10 @@ Update Commands:
 	    { $push: { colors: "white" } } )
 
     db.product_catalog.update(
+	    { prodid: 7000001},
+	    { $addtoSet: { colors: "blue" } } )                              // inserting unique elements
+
+    db.product_catalog.update(
         {prodid:7000001},
         {$push:{colors:{$each:['midnight blue','red']}
         }
@@ -160,15 +164,3 @@ Text Index:
     db.product_catalog.dropIndexes()
 
 ------------------------------------------------------------------------------------------------------------------
- 
-
-
-
-
-
-
-    
-
-
-
-

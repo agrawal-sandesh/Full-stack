@@ -18,5 +18,4 @@ Validator.validateBookingId = function(bookingId) {
     }
 }
 
-
 module.exports = Validator;
