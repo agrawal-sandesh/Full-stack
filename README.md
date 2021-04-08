@@ -8,5 +8,5 @@ It contains:
 4. JavaScript
 5. MongoDB
 6. Node and Express js(with short projects),As of now.
-7. 
+
 I am soon going to update very React JS soon.
