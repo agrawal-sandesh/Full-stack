@@ -7,6 +7,5 @@ It contains:
 3. Bootstrap
 4. JavaScript
 5. MongoDB
-6. Node and Express js(with short projects),As of now.
-
-I am going to update React JS very soon.
+6. Node.js and Express.js
+7. React.js(React.js still updating)
