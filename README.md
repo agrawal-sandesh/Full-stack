@@ -8,4 +8,4 @@ It contains:
 4. JavaScript
 5. MongoDB
 6. Node.js and Express.js
-7. React.js(React.js still updating)
+7. React.js(Still updating)
