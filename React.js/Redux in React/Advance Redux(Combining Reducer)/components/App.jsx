@@ -1,35 +1,25 @@
 import React, { Component, Fragment } from 'react'
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
-
-import { getAllBooks } from '../actions'
-
+import {getAllBook_AsyncActionCreator} from '../actions'
 import './App.css';
 import AddBook from "./AddBook";
 import ViewAllBooks from "./ViewAllBooks";
-
-const dataList = [{
-  title: "Crisis3",
-  author: "Robin Cook",
-  genre: "Mystery thriller",
-  summary: "The terrifying story of a doctor who is the victim of a medical malpractise crisis",
-  id: 1004
-},{
-  title: "Crisis4",
-  author: "Robin Cook",
-  genre: "Mystery thriller",
-  summary: "The terrifying story of a doctor who is the victim of a medical malpractise crisis",
-  id: 1005
-}]
-
 class App extends Component {
-
-  componentDidMount = () => {
-    this.props.dispatch(getAllBooks(dataList));
+  // componentDidMount = () => {
+  //   getAllBooksAPI()
+  //     .then((books) => {
+  //       this.props.dispatch(getAllBooks(books));
+  //     })
+  //     .catch(() => {
+  //       alert('An error occured. Try again.')
+  //     })
+  // }
+  componentDidMount=()=> {
+    this.props.dispatch(getAllBook_AsyncActionCreator());
   }
-
   render() {
-    const {books} = this.props;
+    const { books } = this.props;
     return (
       <Router>
         <Fragment>
@@ -44,8 +34,8 @@ class App extends Component {
               <li className="nav-item">
                 <Link className="nav-link" to="/addBook">Add a Book</Link>
               </li>
-              </ul>
-              <ul className="navbar-nav ml-auto">
+            </ul>
+            <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link className="nav-link" to="/">We have <span className="badge badge-success"> {books.length} </span> books</Link>
               </li>
@@ -53,20 +43,18 @@ class App extends Component {
           </nav>
           <br />
           <Switch>
-              <Route exact path="/card" component={ViewAllBooks} />
-              <Route path="/addBook" component={AddBook} />
-              <Route path="/**" render={() => <Redirect to="/card" />} />
+            <Route exact path="/card" component={ViewAllBooks} />
+            <Route path="/addBook" component={AddBook} />
+            <Route path="/**" render={() => <Redirect to="/card" />} />
           </Switch>
         </Fragment>
       </Router>
     );
   }
 }
-
 function mapStateToProps({ books }) {
   return {
     books,
   }
 }
-
 export default connect(mapStateToProps)(App);
