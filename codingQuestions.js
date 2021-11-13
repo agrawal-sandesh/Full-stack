@@ -104,6 +104,20 @@ chars.forEach((elements) => {
 
 console.log(uniqueChars);
 
+//duplicate character in an array
+let chars1 = ['A', 'B', 'A', 'C', 'B', 'D', 'D'];
+let uniqueChars1 = [];
+let dupChars = []
+chars1.forEach((elements) => {
+    if (!uniqueChars1.includes(elements)) {
+        uniqueChars1.push(elements);
+    } else {
+        dupChars.push(elements)
+    }
+});
+
+console.log(dupChars);
+
 
 //alternate no string
 let arrs1 = ['A', 'B', 'C'];
@@ -141,17 +155,33 @@ function maximum() {
 }
 maximum()
 
+//check frequency in a string
 function checkFrequency(strin1) {
     let count = 0;
     let strin2 = strin1.split("")
-    for (i = 0; i < strin2.length - 1; i++) {
-        for (j = i + 1; j < strin2.length - 1; j++) {
-            if (strin2[i] == strin2[j]) {
-                count++
-            }
+    for (i = 0; i < strin2.length; i++) {
+        if (strin2[i] == 'a') {
+            count++
         }
     }
     console.log(count)
 }
 strin1 = 'aaaaaa'
 checkFrequency(strin1)
+
+//check prime number
+function isPrime(num) {
+    for (var i = 2; i < num; i++)
+        if (num % i === 0) return false;
+    return num > 1;
+}
+console.log(isPrime(6))
+
+//swapn 2 numbers without using 3rd variable
+function swapnNo(x, y) {
+    x = x + y;
+    y = x - y
+    x = x - y;
+    console.log(x, y)
+}
+swapnNo(10, 12)
