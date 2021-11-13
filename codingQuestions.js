@@ -104,6 +104,7 @@ chars.forEach((elements) => {
 
 console.log(uniqueChars);
 
+
 //alternate no string
 let arrs1 = ['A', 'B', 'C'];
 let arrs2 = ['D', 'E', 'F'];
@@ -130,6 +131,7 @@ function maximum(arr3) {
 arr3 = [1, 2, 3, 4, 9, 3, 0, 12]
 maximum(arr3)
 
+//second larget number
 function maximum() {
     var arr = ['20', '120', '111', '215', '54', '78'];
     arr.sort(function(a, b) {
@@ -138,3 +140,18 @@ function maximum() {
     console.log(arr[1]);
 }
 maximum()
+
+function checkFrequency(strin1) {
+    let count = 0;
+    let strin2 = strin1.split("")
+    for (i = 0; i < strin2.length - 1; i++) {
+        for (j = i + 1; j < strin2.length - 1; j++) {
+            if (strin2[i] == strin2[j]) {
+                count++
+            }
+        }
+    }
+    console.log(count)
+}
+strin1 = 'aaaaaa'
+checkFrequency(strin1)
