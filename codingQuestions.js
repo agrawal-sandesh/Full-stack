@@ -58,7 +58,6 @@ function pattern() {
 }
 pattern()
 
-
 //fibonacci series
 const number = 5
 let n1 = 0,
@@ -105,7 +104,7 @@ chars.forEach((elements) => {
 console.log(uniqueChars);
 
 //duplicate character in an array
-let chars1 = ['A', 'B', 'A', 'C', 'B', 'D', 'D'];
+let chars1 = ['A', 'B', 'A', 'C', 'B', 'D', 'D', 'E', 'E'];
 let uniqueChars1 = [];
 let dupChars = []
 chars1.forEach((elements) => {
@@ -116,8 +115,22 @@ chars1.forEach((elements) => {
     }
 });
 
-console.log(dupChars);
+console.log(uniqueChars);
 
+//duplicate character in an array using loops
+function duplicateArray() {
+    console.log("inside the duplicateArray Function")
+    let chars2 = ['A', 'B', 'A', 'C', 'B', 'D', 'D', 'E', 'E', 'F', 'F'];
+    let chars3 = chars2.sort();
+    let dupChars = [];
+    for (i = 0; i < chars3.length; i++) {
+        if (chars3[i] == chars3[i + 1]) {
+            dupChars.push(chars3[i])
+        }
+    }
+    console.log(dupChars)
+}
+duplicateArray();
 
 //alternate no string
 let arrs1 = ['A', 'B', 'C'];
@@ -175,7 +188,7 @@ function isPrime(num) {
         if (num % i === 0) return false;
     return num > 1;
 }
-console.log(isPrime(6))
+console.log(isPrime(7))
 
 //swapn 2 numbers without using 3rd variable
 function swapnNo(x, y) {
@@ -185,3 +198,13 @@ function swapnNo(x, y) {
     console.log(x, y)
 }
 swapnNo(10, 12)
+
+//check even odd without modulus
+
+// function evenOdd(number) {
+//     let quotient = number / 2;
+//     if (quotient * 2 == number) {
+//         console.log("Even number");
+//     }
+// }
+// evenOdd(5)
